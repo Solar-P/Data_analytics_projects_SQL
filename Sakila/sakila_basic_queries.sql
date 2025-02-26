@@ -71,11 +71,3 @@ WHERE store_id = (
                     SELECT staff_id
                     FROM staff
                     WHERE first_name = 'Mike' AND last_name = 'Hillyer')
-
-/* Write a query to retrieve the first_name, last_name, and email of all customers with store_id of 1 from table customer.
-Order the results by first_name in ascending order and then by last_name in descending order*/
-
-SELECT first_name, last_name, email
-FROM customer
-WHERE store_id = 1
-ORDER BY first_name ASC, last_name DESC
